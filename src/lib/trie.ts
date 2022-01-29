@@ -178,6 +178,7 @@ export function getCollapsedTrie() {
     'dispensable',
     'hapless',
     'bat',
+    'vagina',
     'amuck',
     'bury',
     'arrest',
