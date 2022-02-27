@@ -91,13 +91,11 @@ export function collectTerms(root: CollapsedNode | null): Array<string> {
     current = node;
     prefix = node.partial;
     partial = '';
-    if (current.children.length === 1) {
-      console.log(current.children[0]);
-    }
+
     while (current.children.length > 0) {
       // eslint-disable-next-line prefer-destructuring
       current = current.children[0];
-      // partial = `${partial}${node.partial}`;
+      prefix = `${prefix}${current.partial}`;
     }
 
     results.push(`${root.partial}${prefix}`);
